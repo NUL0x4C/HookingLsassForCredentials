@@ -2,6 +2,16 @@
 
 </br>
 
+### Quick Links
+
+[Maldev Academy Home](https://maldevacademy.com)
+  
+[Maldev Academy Syllabus](https://maldevacademy.com/syllabus)
+
+[Offensive Phishing Operations](https://maldevacademy.com/phishing-course)
+
+</br>
+
 ## Explanation
 
 The goal of this PoC is to leverage the registry key discovered [here](https://github.com/Maldev-Academy/LsassHijackingViaReg) to load a DLL into Lsass.exe that will allow us to fetch the user's credentials (in any form possible) while effectively bypassing Credential Guard. It is worth mentioning that when Credential Guard is enabled, Lsass.exe hands over credential protection and caching to LsaIso.exe, however, Lsass.exe remains the one responsible for verifying the login user credentials.
